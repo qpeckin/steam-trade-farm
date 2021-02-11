@@ -60,7 +60,6 @@ manager.on('newOffer', (offer) => {
 	}*/
 });
 
-// dotacje
 /*manager.on('newOffer', (offer) => {
     if (offer.itemsToGive.length === 0) {
         offer.accept((err, status) => {
