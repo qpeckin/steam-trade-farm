@@ -35,7 +35,7 @@ client.on('webSession', (sessionid, cookies) => {
 
 	console.log('[-]Returning items...');
 	sendRandomItem();
-}, 240 * 1000); // 240 * 1000 milsec = 4 min
+}, 240 * 1000); // 240 * 1000 ms = 4 min
 });
 
 manager.on('newOffer', (offer) => {
