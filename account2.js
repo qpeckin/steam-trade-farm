@@ -29,6 +29,7 @@ client.on('webSession', (sessionid, cookies) => {
 
 	community.setCookies(cookies);
 	
+	//Propably wont need that in passive bot
 	//community.startConfirmationChecker(10000, 'IDENTITYSECRET_FROM_WINAUTH');
 	
 	setInterval(function() {
