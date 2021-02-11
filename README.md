@@ -51,5 +51,6 @@ Just start "StartAccount1.bat" and "StartAccount2.bat" at the same time
 ## Shoutout
 
 Highly Inspired by [Koncealed](https://github.com/RobertSkonieczny/node-steam-trade-farm)
+Thanks to [Zyffu](https://github.com/Zyffu) for helping me with maths
 
 
