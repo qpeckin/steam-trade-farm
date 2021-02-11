@@ -38,6 +38,8 @@ Just start "StartAccount1.bat" and "StartAccount2.bat" at the same time
 -The default settings use steam items, you can change if you want
 -Dont forget to leave a star if you like the script
 -I dont provide help, very easy setup
+
+-Make sure your account 1 have a lot of steam items [backgrounds, cards, icons...]
 ```
 
 ## Author
@@ -48,4 +50,5 @@ Just start "StartAccount1.bat" and "StartAccount2.bat" at the same time
 ## Shoutout
 
 Highly Inspired by [Koncealed](https://github.com/RobertSkonieczny/node-steam-trade-farm)
+
 
