@@ -44,4 +44,7 @@ Just start "StartAccount1.bat" and "StartAccount2.bat" at the same time
 
 * **qpeckin** - [Steam Profile](https://steamcommunity.com/id/qpeckin/)
 
+
+## Shoutout
+
 Highly Inspired by [Koncealed](https://github.com/RobertSkonieczny/node-steam-trade-farm)
