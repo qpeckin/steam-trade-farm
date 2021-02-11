@@ -93,10 +93,10 @@ function sendRandomItem() {
 			
 			
 			let accessAllowed;
-			//const iloscitemowweq = [Math.floor(inventory.length)];
+			//const quantity = [Math.floor(inventory.length)];
 			//console.log(iloscitemowweq);
 			
-			/*if (iloscitemowweq > 4) {
+			/*if (quantity > 4) {
 			  //const item1 = inventory[Math.floor(inventory.length - 1)];
 			  //offer.addMyItem(item1);
 			  offer.addMyItem({"appid": 753,"contextid": 6,"assetid": "6229351376","amount": "69"});
