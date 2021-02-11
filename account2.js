@@ -123,7 +123,7 @@ function sendRandomItem() {
 			//offer.addMyItem(item2);
 			//offer.addMyItem({"appid": 753,"contextid": 6,"assetid": "6229351376","amount": "69"}); //Default Items: Steam
 			//offer.setMessage(`Wow! You get a ${item1.name}!`);	//Donation Variant
-			offer.setMessage(`Qpeckin Senpai`);
+			offer.setMessage(`qpeckin's technologies`);
 			offer.send((err, status) => {
 				if (err) {
 					console.log(err);
