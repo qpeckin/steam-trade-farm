@@ -1,6 +1,7 @@
 # steam-trade-farm
 
 This is a basic script, that use 2 of your accounts and makes trades to boost 'Trades Done' on your Steam Profile.
+![head](https://user-images.githubusercontent.com/64363113/107683028-5fef8800-6ca1-11eb-9008-1e0f00f7e143.png)
 
 ## Getting Started
 
