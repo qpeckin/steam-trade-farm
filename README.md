@@ -43,12 +43,12 @@ Just start "StartAccount1.bat" and "StartAccount2.bat" at the same time
 -Make sure your account 1 have a lot of steam items [backgrounds, cards, icons...]
 
 -If you get a lot of errors, reduce the delay in "account2.js" line "38"
--**Never share your shared secret and your identity secret ⚠️**
+-**Never share your shared secret and your identity secret ⚠️**-
 ```
 
 ## Author
 
-* **qpeckin** - [Steam Profile](https://steamcommunity.com/id/qpeckin/) - [Steam Group](https://steamcommunity.com/groups/qpeckin) - [YouTube](https://www.youtube.com/channel/UCfPkJWN0qF3CsWiGYNlhACQ)
+* **qpeckin** - [Steam Group](https://steamcommunity.com/groups/qpeckin) - [YouTube](https://www.youtube.com/channel/UCfPkJWN0qF3CsWiGYNlhACQ)
 
 
 ## Shoutout
