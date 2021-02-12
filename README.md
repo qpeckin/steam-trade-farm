@@ -40,7 +40,7 @@ Just start "StartAccount1.bat" and "StartAccount2.bat" at the same time
 -Accounts use steam items [backgrounds, emoticons, cards] can easily change it
 ```
 
-### Note
+### Notes
 ```
 ⚠️ Never share your steam logs/shared secret/identity secret with anyone ⚠️
 🙏 Support me by following me and leave a star 🙏
