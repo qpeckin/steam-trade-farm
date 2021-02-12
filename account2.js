@@ -36,7 +36,7 @@ client.on('webSession', (sessionid, cookies) => {
 
 	console.log('[-]Returning items...');
 	sendRandomItem();
-}, 240 * 1000); // 240 * 1000 ms = 4 min [replace '240' by '140' if Account2 take too much time to send the inventory back]
+}, 240 * 1000); // 240 * 1000 ms = 4 min [reduce '240' by a lower number, really depend on how many items you're using]
 });
 
 manager.on('newOffer', (offer) => {
