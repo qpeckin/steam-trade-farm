@@ -36,14 +36,16 @@ Just start "StartAccount1.bat" and "StartAccount2.bat" at the same time
 ### How it work ?
 
 ```
--The default settings use steam items, you can change if you want
--Dont forget to leave a star if you like the script
--Dont forget to leave a follow if you like the script
--I dont provide help, very easy setup
--Make sure your account 1 have a lot of steam items [backgrounds, cards, icons...]
-
--**Never share your shared secret and your identity secret ⚠️**-
+-Account 1 send items to Account 2, After 4 minutes Account 2 send the whole inventory back to Account 1
+-Accounts use steam items [backgrounds, emoticons, cards] can easily change it
 ```
+
+### Note
+```
+⚠️ Never share your steam logs/shared secret/identity secret with anyone ⚠️
+🙏 Support me by following me and leave a star 🙏
+```
+
 
 ## Author
 
