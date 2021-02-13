@@ -51,7 +51,7 @@ Just start "StartAccount1.bat" and "StartAccount2.bat" at the same time
 ```
 eresult: 2 = This is occasionally returned when something unexpected goes wrong when sending or accepting a trade offer.
 eresult: 11 = This trade offer is in an invalid state, and cannot be acted upon. Usually you'll need to send a new trade offer.
-eresult: 25 = Sending this trade offer would put you over your limit. You are limited to 5 Active offers to a single recipient, or 30 Active offers total.
+eresult: 25 = Sending this trade offer would put you over your limit. You are limited to 5 Active offers to a single recipient.
 
 List: https://steamerrors.com/tradeoffers
 ```
