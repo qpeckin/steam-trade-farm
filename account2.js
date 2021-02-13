@@ -95,7 +95,7 @@ function sendRandomItem() {
 			
 			let accessAllowed;
 			//const quantity = [Math.floor(inventory.length)];
-			//console.log(iloscitemowweq);
+			//console.log(number of items);
 			
 			/*if (quantity > 4) {
 			  //const item1 = inventory[Math.floor(inventory.length - 1)];
