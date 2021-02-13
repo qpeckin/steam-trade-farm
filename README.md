@@ -24,7 +24,7 @@ You can watch this video: https://www.youtube.com/watch?v=JjdOJVSZ9Mo [SDA/WinAu
 1) Extract the folder to your desktop
 2) Open a prompt and type: npm install steam-user steam-totp steamcommunity steam-tradeoffer-manager
 3) Open account1.js and edit with your infos [Lines: 15,16,17,31,42,89]
-4) Open account2.js and edit with your infos [Lines: 15,16,17,32,42,91]
+4) Open account2.js and edit with your infos [Lines: 15,16,17,34,44,93]
 ```
 
 ### Start the bots
