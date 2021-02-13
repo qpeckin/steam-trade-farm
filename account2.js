@@ -29,7 +29,8 @@ client.on('webSession', (sessionid, cookies) => {
 
 	community.setCookies(cookies);
 	
-	//Propably wont need that in passive bot
+	//Identity Secret is being used to "sign" the trade confirmation requests.
+	//If you want to automatically approve trades, you must remove the "//" in front of the line 34
 	//community.startConfirmationChecker(10000, 'IDENTITYSECRET_FROM_WINAUTH');
 	
 	setInterval(function() {
