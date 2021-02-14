@@ -37,7 +37,7 @@ client.on('webSession', (sessionid, cookies) => {
 
 	console.log('[-]Returning items...');
 	sendRandomItem();
-}, 240 * 1000); // 240 * 1000 ms = 4 min [reduce '240' by a lower number, really depend on how many items you're using]
+}, 200 * 1000); // 200 * 1000 ms = 3.3 min [lot of items = increase the delay]
 });
 
 manager.on('newOffer', (offer) => {
@@ -104,7 +104,7 @@ function sendRandomItem() {
 			  offer.addMyItem({"appid": 753,"contextid": 6,"assetid": "6229351376","amount": "69"});
 			} else {*/
 			
-			//PassivBot = Transfer whole inventory every x min back to Account1
+			//Transfer whole inventory every x min back to Account1
 			
 			inventory.forEach(function(element) {
 				offer.addMyItem(element);
