@@ -35,7 +35,7 @@ client.on('webSession', (sessionid, cookies) => {
 
 	console.log('[-]Trying to send trade...');
 	sendRandomItem();
-}, 5500); // random * 1000 milsec //}, randomtimer * 1000);
+}, 6000); // random * 1000 milsec //}, randomtimer * 1000);
 });
 
 manager.on('newOffer', (offer) => {
