@@ -28,14 +28,14 @@ client.on('webSession', (sessionid, cookies) => {
 	manager.setCookies(cookies);
 
 	community.setCookies(cookies);
-	community.startConfirmationChecker(4500, 'IDENTITYSECRET_FROM_WINAUTH'); // 
+	community.startConfirmationChecker(4000, 'IDENTITYSECRET_FROM_WINAUTH'); // 
 	
 	//var randomtimer = (Math.floor(Math.random() * (17 - 11)) + 11);	
 	setInterval(function() {
 
 	console.log('[-]Trying to send trade...');
 	sendRandomItem();
-}, 7500); // random * 1000 milsec //}, randomtimer * 1000);
+}, 5500); // random * 1000 milsec //}, randomtimer * 1000);
 });
 
 manager.on('newOffer', (offer) => {
