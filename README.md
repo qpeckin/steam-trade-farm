@@ -22,7 +22,8 @@ You can watch this video: https://www.youtube.com/watch?v=JjdOJVSZ9Mo [SDA/WinAu
 
 ```
 1) Download and extract the folder to your desktop
-2) Open a prompt and type: npm install steam-user steam-totp steamcommunity steam-tradeoffer-manager chalk chalk-animation gradient-string
+2) Open a prompt and type: 
+npm install steam-user steam-totp steamcommunity steam-tradeoffer-manager chalk chalk-animation gradient-string
 3) Open account1.js and edit with your infos [Lines: 25,26,27,49,60,109]
 4) Open account2.js and edit with your infos [Lines: 25,26,27,52,63,112]
 ```
