@@ -1,9 +1,5 @@
 @echo off
-:main
-echo Script Started
-echo Github -  https://github.com/qpeckin/steam-trade-farm
-echo Steam Group - https://steamcommunity.com/groups/qpeckin
-echo.                                                                                                                            
+:main                                                                                                                          
 title Account #2 - Trade Boost 
 node account2.js
 echo Script Crashed
