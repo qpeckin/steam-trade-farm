@@ -2,6 +2,9 @@ const SteamUser = require('steam-user');
 const SteamTotp = require('steam-totp');
 const SteamCommunity = require('steamcommunity');
 const TradeOfferManager = require('steam-tradeoffer-manager');
+const chalk = require('chalk');
+const chalkAnimation = require('chalk-animation');
+const gradient = require('gradient-string');
 
 const client = new SteamUser();
 const community = new SteamCommunity();
@@ -10,9 +13,16 @@ const manager = new TradeOfferManager({
 	community: community,
 	language: 'en'
 });
+                
+//SexyPrompt
+console.log(gradient.pastel('Script Started'))
+console.log('');
+console.log(gradient.pastel('Made with ♥ by qpeckin'));
+console.log(gradient.pastel('https://github.com/qpeckin/steam-trade-farm/'));
+                                                                                                                                        
 //SteamLogin
 const logOnOptions = {
-	accountName: 'STEAMLOGIN', 
+	accountName: 'LOGIN', 
 	password: 'PASSWORD', 
 	twoFactorCode: SteamTotp.generateAuthCode('SHARED_SECRET_FROM_WINAUTH')
 };
@@ -20,7 +30,15 @@ const logOnOptions = {
 client.logOn(logOnOptions);
 
 client.on('loggedOn', () => {
-	console.log('Logged Into Steam');
+	 const rainbow = chalkAnimation.neon('Logged Into Steam'); // Animation starts
+        setTimeout(() => {
+        rainbow.stop(); // Animation stops
+       }, 1000);
+        setTimeout(() => {
+        rainbow.start(); // Animation resumes
+       }, 2000);
+
+ 	console.log('');
 });
 
 //TokenAutoAccept
@@ -33,18 +51,20 @@ client.on('webSession', (sessionid, cookies) => {
 	//var randomtimer = (Math.floor(Math.random() * (17 - 11)) + 11);	
 	setInterval(function() {
 
-	console.log('[-]Trying to send trade...');
+	console.log(chalk.yellow('[-]Trying to send trade...'));
 	sendRandomItem();
-}, 6000); // random * 1000 milsec //}, randomtimer * 1000);
+}, 7000); // random * 1000 milsec //}, randomtimer * 1000);
 });
 
 manager.on('newOffer', (offer) => {
-	if (offer.partner.getSteamID64() === 'STEAMID64_OF_ACCOUNT2') {	//ID64 Of Account2
+	if (offer.partner.getSteamID64() === 'Account2_STEAMID64') {	//ID64 Of Account2
 		offer.accept((err, status) => {
 			if (err) {
 				qpeckin_catch_steam_errors(err);
 			} else {
-				console.log(`[+]Accepted trade from farm partner - Status: ${status}.`);
+                                console.log('');
+				console.log(chalk.green(`[+]Accepted trade from farm partner - Status: ${status}.`));
+                                console.log('');
 			}
 		});
 	} /*else {
@@ -53,7 +73,7 @@ manager.on('newOffer', (offer) => {
 				console.log(err);
 				process.exit();
 			} else {
-				console.log('[*]Canceled offer from scammer.');
+				console.log(chalk.orange('[*]Canceled offer from scammer.'));
 			}
 		});
 	}*/
@@ -116,7 +136,7 @@ function sendRandomItem() {
 				if (err) {
 					qpeckin_catch_steam_errors(err);
 				} else {
-					console.log(`[-]Sent offer - Status: ${status}.`);
+					console.log(chalk.yellow(`[-]Sent offer - Status: ${status}.`));
 					//console.log(item1);
 				}
 			});
@@ -128,6 +148,7 @@ function sendRandomItem() {
 function qpeckin_catch_steam_errors(log) {
 	
 	console.log(log);
+	console.log('');
 	console.log("Testing if we know this error...");
 
 	var x = log.toString();
@@ -135,13 +156,16 @@ function qpeckin_catch_steam_errors(log) {
 	
 	//Check if we know the errors
 	if (x.includes('There was an error ') || x.includes('d during')) {
-		console.log("Yes - ignoring...");	/*catches both incoming and sent offers!*/
+		console.log("Yes - ignoring...");	//Catch incoming and sent offers
+                console.log('');
 	}
 	else if (x.includes("Cannot read property 'appid' of undefined")) {
 		console.log("Yes - ignoring...");
+                console.log('');
 	}
 	else if (x.includes("too many") || x.includes("too much")) {
 		console.log("Yes - ignoring...");
+                console.log('');
 	}
 	else {
 		console.log("Unknown error - restarting...");
