@@ -53,7 +53,7 @@ client.on('webSession', (sessionid, cookies) => {
 
 	console.log(chalk.yellow('[-]Trying to send trade...'));
 	sendRandomItem();
-}, 7000); // random * 1000 milsec //}, randomtimer * 1000);
+}, 7500); // random * 1000 milsec //}, randomtimer * 1000);
 });
 
 manager.on('newOffer', (offer) => {
