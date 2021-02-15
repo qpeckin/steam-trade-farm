@@ -21,10 +21,10 @@ First off get your Identity Secrets and Shared Secrets.
 You can watch this video: https://www.youtube.com/watch?v=JjdOJVSZ9Mo [SDA/WinAuth works the same]
 
 ```
-1) Extract the folder to your desktop
-2) Open a prompt and type: npm install steam-user steam-totp steamcommunity steam-tradeoffer-manager
-3) Open account1.js and edit with your infos [Lines: 15,16,17,31,42,89]
-4) Open account2.js and edit with your infos [Lines: 15,16,17,34,44,93]
+1) Download and extract the folder to your desktop
+2) Open a prompt and type: npm install steam-user steam-totp steamcommunity steam-tradeoffer-manager chalk chalk-animation gradient-string
+3) Open account1.js and edit with your infos [Lines: 25,26,27,49,60,109]
+4) Open account2.js and edit with your infos [Lines: 25,26,27,52,63,112]
 ```
 
 ### Start the bots
@@ -36,7 +36,7 @@ Just start "StartAccount1.bat" and "StartAccount2.bat" at the same time
 ### How it work ?
 
 ```
--Account 1 send items to Account 2, After 4 minutes Account 2 send the whole inventory back to Account 1
+-Account 1 send items to Account 2, After X minutes Account 2 send the whole inventory back to Account 1
 -Accounts use steam items [backgrounds, emoticons, cards] can easily change it
 ```
 
