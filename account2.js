@@ -2,6 +2,9 @@ const SteamUser = require('steam-user');
 const SteamTotp = require('steam-totp');
 const SteamCommunity = require('steamcommunity');
 const TradeOfferManager = require('steam-tradeoffer-manager');
+const chalk = require('chalk');
+const chalkAnimation = require('chalk-animation');
+const gradient = require('gradient-string');
 
 const client = new SteamUser();
 const community = new SteamCommunity();
@@ -10,9 +13,16 @@ const manager = new TradeOfferManager({
 	community: community,
 	language: 'en'
 });
+
+//SexyPrompt
+console.log(gradient.pastel('Script Started'))
+console.log('');
+console.log(gradient.pastel('Made with ♥ by qpeckin'));
+console.log(gradient.pastel('https://github.com/qpeckin/steam-trade-farm/'));
+
 //SteamLogin
 const logOnOptions = {
-	accountName: 'STEAMLOGIN',
+	accountName: 'LOGIN',
 	password: 'PASSWORD',
 	twoFactorCode: SteamTotp.generateAuthCode('SHARED_SECRET_FROM_WINAUTH')
 };
@@ -20,7 +30,15 @@ const logOnOptions = {
 client.logOn(logOnOptions);
 
 client.on('loggedOn', () => {
-	console.log('Logged Into Steam');
+	 const rainbow = chalkAnimation.neon('Logged Into Steam'); // Animation starts
+        setTimeout(() => {
+        rainbow.stop(); // Animation stops
+       }, 1000);
+        setTimeout(() => {
+        rainbow.start(); // Animation resumes
+       }, 2000);
+
+ 	console.log('');
 });
 
 //TokenAutoAccept
@@ -30,24 +48,25 @@ client.on('webSession', (sessionid, cookies) => {
 	community.setCookies(cookies);
 	
 	//Identity Secret is being used to "sign" the trade confirmation requests.
-	//Used to approve trades, if you want to accept the trades on WinAuth add "//" in front of the line 34
-	community.startConfirmationChecker(10000, 'IDENTITYSECRET_FROM_WINAUTH');
+	//Used to approve trades, if you want to accept the trades on WinAuth add "//" in front of the line 52
+	community.startConfirmationChecker(4500, 'IDENTITYSECRET_FROM_WINAUTH');
 	
 	setInterval(function() {
 
-	console.log('[-]Returning items...');
+        console.log('');
+	console.log(chalk.yellow('[-]Returning items...'));
 	sendRandomItem();
-}, 200 * 1000); // 200 * 1000 ms = 3.3 min [lot of items = increase the delay]
+}, 150 * 1000); // 150 * 1000 ms = 2.5 min [reduce '150' by a lower number, really depend on how many items you're using]
 });
 
 manager.on('newOffer', (offer) => {
-	if (offer.partner.getSteamID64() === 'STEAMID64_OF_ACCOUNT1') {	//ID64 Of Account1
+	if (offer.partner.getSteamID64() === 'Account1_STEAMID64') {	//ID64 Of Account1
 		offer.accept((err, status) => {
 			if (err) {
 				console.log(err);
 				process.exit();
 			} else {
-				console.log(`[+]Accepted trade from farm partner - Status: ${status}.`);
+				console.log(chalk.green(`[+]Accepted trade from farm partner - Status: ${status}.`));
 			}
 		});
 	} /*else {
@@ -96,7 +115,7 @@ function sendRandomItem() {
 			
 			let accessAllowed;
 			//const quantity = [Math.floor(inventory.length)];
-			//console.log(number of items);
+			//console.log(iloscitemowweq);
 			
 			/*if (quantity > 4) {
 			  //const item1 = inventory[Math.floor(inventory.length - 1)];
@@ -104,7 +123,7 @@ function sendRandomItem() {
 			  offer.addMyItem({"appid": 753,"contextid": 6,"assetid": "6229351376","amount": "69"});
 			} else {*/
 			
-			//Transfer whole inventory every x min back to Account1
+			//PassivBot = Transfer whole inventory every x min back to Account1
 			
 			inventory.forEach(function(element) {
 				offer.addMyItem(element);
@@ -131,12 +150,12 @@ function sendRandomItem() {
 					console.log(err);
 					process.exit();
 				} else {
-					console.log(`[-]Sent offer - Status: ${status}.`);
-					console.log('[!]Remember to leave a star in github');
+					console.log(chalk.yellow(`[-]Sent offer - Status: ${status}.`));
+					console.log(chalk.magentaBright('[!]Remember to leave a star in github'));
+                                        console.log('');
 					//console.log(item1);
 				}
 			});
 		}
 	});
 }
-
