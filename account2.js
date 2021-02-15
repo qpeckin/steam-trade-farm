@@ -49,7 +49,7 @@ client.on('webSession', (sessionid, cookies) => {
 	
 	//Identity Secret is being used to "sign" the trade confirmation requests.
 	//Used to approve trades, if you want to accept the trades on WinAuth add "//" in front of the line 52
-	community.startConfirmationChecker(4500, 'IDENTITYSECRET_FROM_WINAUTH');
+	community.startConfirmationChecker(10000, 'IDENTITYSECRET_FROM_WINAUTH');
 	
 	setInterval(function() {
 
