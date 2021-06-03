@@ -49,7 +49,7 @@ Just start "StartAccount1.bat" and "StartAccount2.bat" at the same time
 
 ## Author
 
-* **qpeckin** - [Steam Group](https://steamcommunity.com/groups/qpeckin) - [YouTube](https://www.youtube.com/channel/UCfPkJWN0qF3CsWiGYNlhACQ)
+* **qpeckin** -  [YouTube](https://www.youtube.com/channel/UCfPkJWN0qF3CsWiGYNlhACQ)
 
 
 ## Shoutout
