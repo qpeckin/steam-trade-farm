@@ -9,7 +9,7 @@ const gradient = require('gradient-string');
 const client = new SteamUser();
 const community = new SteamCommunity();
 const manager = new TradeOfferManager({
-	steam: client,
+	steam: client,dsdv
 	community: community,
 	language: 'en'
 });
