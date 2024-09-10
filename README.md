@@ -49,7 +49,11 @@ Just start "StartAccount1.bat" and "StartAccount2.bat" at the same time
 
 ## Author
 
-* **qpeckin** -  [YouTube](https://www.youtube.com/channel/UCfPkJWN0qF3CsWiGYNlhACQ)
+* **qpeckin** -  [YouTube](www.youtube.com/watch?v=kaH6mvyDXcU)
+
+## Support
+
+For support, join my DC server at [discord.gg/forgers](https://discord.gg/forgers)
 
 
 ## Shoutout
