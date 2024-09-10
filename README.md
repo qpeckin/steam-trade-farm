@@ -49,7 +49,7 @@ Just start "StartAccount1.bat" and "StartAccount2.bat" at the same time
 
 ## Author
 
-* **qpeckin** -  [YouTube](www.youtube.com/watch?v=kaH6mvyDXcU)
+* **qpeckin** -  [YouTube](https://www.youtube.com/watch?v=kaH6mvyDXcU)
 
 ## Support
 
